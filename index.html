@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ano sya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6e6;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #ff6b6b;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ff6b6b;
+            margin: 0 auto 20px;
+            display: block;
+            animation: beat 1s infinite alternate;
+        }
+        @keyframes beat {
+            to { transform: scale(1.05); }
+        }
+        button {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #ff5252;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Replace the src with your image URL -->
+        <img src=https://drive.google.com/file/d/14KQpqQ0kwspYO52Jh9U-aw3WvX79zI7c/view?usp=sharing class="profile-pic" alt="Your Picture">
+        <h1>Hellow</h1>
+        <p>Click mo</p>
+        
+        <button onclick="showMessage()">Hehe</button>
+        
+        <div id="message" class="hidden">
+            <h2>hellow crush po kita</h2>
+            <p>La ako maisip na ichat gumawa na lng ako link</p>
+            <p>kung na cricringe ka man , ako den e pero wala e it is what it is.</p>
+            <p><strong>you miss 100% of the chances you don't take - Wayne Gretzky</strong> </p>
+            <p>pero kung iba naman ang crush mo , okay lng ganyan talaga buhay </p>
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById('message').classList.remove('hidden');
+            document.querySelector('button').textContent = "Hope this makes you smile!";
+        }
+    </script>
+</body>
+</html>
